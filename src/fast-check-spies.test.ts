@@ -35,11 +35,6 @@ const arbInfs = (): SpyingArbitrary<Tp<Log, Log>, Tp<Interface, Interface>> => p
     bind('r', 'r', () => arbInterface())
 )
 
-const inputs = fc.record({
-    fooInputs: fc.array(fc.integer(), {minLength: 1, maxLength: 10}),
-    barInputs: fc.array(fc.string(), {minLength: 1, maxLength: 10}),
-})
-
 it('should work', () => {
     fc.assert(fc.property(arbInfs(), (spy) => {
         const [{r: log}, {r: ifc}] = getSpy(spy)
