@@ -1,11 +1,11 @@
-# fast-check-spies
+# @writebettertests/fast-check-spies
 
 A TypeScript library that enhances fast-check's property-based testing with powerful spying capabilities. Track function calls, arguments, and results while maintaining type safety.
 
 ## Installation
 
 ```bash
-npm install fast-check-spies
+npm install @writebettertests/fast-check-spies
 ```
 
 ## Prerequisites
@@ -69,7 +69,7 @@ Here's an example testing an HTTP client with spies. This example demonstrates:
 
 ```typescript
 import fc from 'fast-check'
-import { Spy } from 'fast-check-spies'
+import { Spy } from '@writebettertests/fast-check-spies'
 
 // Types for our specific use case
 type Response<T> = { data: T, status: number }

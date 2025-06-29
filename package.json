@@ -1,15 +1,16 @@
 {
-  "name": "fast-check-spies",
+  "name": "@writebettertests/fast-check-spies",
+  "url": "https://github.com/WriteBetterTests/fast-check-spies",
   "version": "0.1.0",
-  "description": "Enhanced functionality for fast-check",
+  "description": "Inject arbitrary powered dependencies for property-based testing",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     }
   },
   "files": [
@@ -27,8 +28,16 @@
     "property-based-testing",
     "typescript"
   ],
-  "author": "",
+  "author": "WriteBetterTests",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WriteBetterTests/fast-check-spies.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WriteBetterTests/fast-check-spies/issues"
+  },
+  "homepage": "https://github.com/WriteBetterTests/fast-check-spies",
   "peerDependencies": {
     "fast-check": "^3.0.0"
   },
