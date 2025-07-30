@@ -2,7 +2,7 @@ import fc from 'fast-check';
 
 export namespace Spy {
 
-    export type Spied<I extends any[], A> = { args: I[], result: A }
+    export type Spied<I extends any[], A> = { args: I, result: A }
 
     export type SpyingArbitrary<L, A> = {run_: fc.Arbitrary<[() => void, L, A]>}
 
