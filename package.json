@@ -1,7 +1,7 @@
 {
   "name": "@writebettertests/fast-check-spies",
   "url": "https://github.com/WriteBetterTests/fast-check-spies",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Inject arbitrary powered dependencies for property-based testing",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
