@@ -97,14 +97,6 @@ export namespace Spy {
         { readonly [K in keyof A | N]: K extends keyof A ? A[K] : B }
     >;
 
-    export function bind<N extends string, L, L2, A, B>(
-        name: Exclude<N, keyof A>,
-        f: (a: A) => fc.Arbitrary<B>
-    ): (ma: SpyingArbitrary<L, A>) => SpyingArbitrary<
-        L & { readonly [K in keyof L | N]: K extends keyof L ? L[K] : L2 },
-        { readonly [K in keyof A | N]: K extends keyof A ? A[K] : B }
-    >;
-
     export function bind<N extends string, LK extends string, L, L2, A, B>(
         name: Exclude<N, keyof A>,
         ...rest: [(a: A) => fc.Arbitrary<B>] | 
